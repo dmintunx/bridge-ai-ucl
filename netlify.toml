@@ -1,7 +1,8 @@
 [build]
   publish = "frontend/dist"
   functions = "netlify/functions"
-
+  # Functions တွေအတွက် dependencies တွေကို install လုပ်ဖို့အတွက် plugin ထည့်ပါ
+  # ဒါမှ netlify/functions/package.json ထဲက dependencies တွေကို သိမှာပါ
 
 [[plugins]]
   package = "@netlify/plugin-functions-install-core"
