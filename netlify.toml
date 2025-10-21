@@ -2,6 +2,10 @@
   publish = "frontend/dist"
   functions = "netlify/functions"
 
+
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
